@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css';
-// import IntervalHookCounter from './components/UseEffect/IntervalHookCounter';
-// import MouseContainer from './components/UseEffect/MouseContainer';
-import DataFetching from './components/DataFetching';
+import ComponentC from './components/Context/ComponentC';
 
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      {/* <MouseContainer/> */}
-      {/* <IntervalHookCounter/> */}
-      <DataFetching/>
+      <UserContext.Provider value = {"Fahad"}>
+        <ChannelContext.Provider value = {"Codevolution"}>
+          <ComponentC/>
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
