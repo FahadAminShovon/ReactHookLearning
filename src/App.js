@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ComponentC from './components/Context/ComponentC';
+import ComponentE from './components/Context/ComponentE';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <UserContext.Provider value = {"Fahad"}>
         <ChannelContext.Provider value = {"Codevolution"}>
-          <ComponentC/>
+          <ComponentE/>
         </ChannelContext.Provider>
       </UserContext.Provider>
     </div>
