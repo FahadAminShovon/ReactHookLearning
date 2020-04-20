@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import HookTimer from './components/UseRefHook/HookTimer';
+import CounterOne from './components/UseCounter/CounterOne';
+import CounterTwo from './components/UseCounter/CounterTwo';
 
 function App () {
-
-
-
+  
   return (
       <div className="App">
-        <HookTimer/>
+        <CounterOne/>
+        <CounterTwo/>
       </div>
   );
 }
