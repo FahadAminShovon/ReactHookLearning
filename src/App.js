@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
-import CounterOne from './components/UseCounter/CounterOne';
-import CounterTwo from './components/UseCounter/CounterTwo';
+import UseForm from './components/UseForm';
 
 function App () {
   
   return (
       <div className="App">
-        <CounterOne/>
-        <CounterTwo/>
+        <UseForm/>
       </div>
   );
 }
